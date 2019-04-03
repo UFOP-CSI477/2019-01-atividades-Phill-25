@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto</title>
+  </head>
+  <body>
+    <h1>Informações do produto:</h1>
+    <form action="formulario.html" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder = "Digite o nome"><br><br>
+
+        <label for="peso">Peso:</label><br>
+        <input type="number" id="peso" name="peso" placeholder = "Digite o peso">
+        <select id="slc1" name="unidade_medida">
+          <option value="00">Escolha a unidade</option>
+          <option value="01">Kg</option>
+          <option value="02">g</option>
+          <option value="03">mg</option>
+        </select><br><br>
+
+        <label for="estoque">Estoque inicial:</label><br>
+        <input type="number" id="estoque" name="estoque"><br><br>
+
+        <label>Mercado:</label><br>
+        <label for="interno">Interno</label>
+        <input type="radio" id="interno" name="mercado" value="I"><br>
+        <label for="externo">Externo</label>
+        <input type="radio" id="externo" name="mercado" value="E"><br><br>
+
+        <label for="fornecedor">Fornecedor:</label><br>
+        <select name="fornecedor">
+          <option value="00">Escolha um fornecedor</option>
+          <option value="01">Empresa 1</option>
+          <option value="02">Empresa 2</option>
+          <option value="03">Empresa 3</option>
+          <option value="04">Empresa 4</option>
+        </select><br><br>
+
+        <label for="valor">Valor de compra:</label><br>
+        <input type="number" id="valor" nome="valor" placeholder="Digite o valor da unidade"><label for="valor">R$</label><br><br>
+    </form>
+    <input type="submit" name="salvar" id="salvar" value="Salvar">
+    <input type="reset" name="Limpar" value="Limpar"><br><br>
+    <a href="Principal.html">Voltar</a>
+  </body>
+</html>
