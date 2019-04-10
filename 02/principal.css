@@ -1,0 +1,21 @@
+h1{
+  border: solid black 2px;
+  font-family: "Arial";
+  font-size: 36px;
+}
+
+h2{
+  font-size: 28px;
+  font-family: "Courier New";
+}
+
+div{
+width: 100%;
+margin: 6pt;
+}
+.botao, .sair{
+  color: black;
+  text-decoration: none;
+  border: solid DodgerBlue 2px;
+  border-radius: 4px;
+}
