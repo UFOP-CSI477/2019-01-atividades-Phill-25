@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="E:/Documentos/Faculdade/7° Semestre/Sistemas WEB I/Atividade/2019-01-atividades-Phill-25/bootstrap/css/bootstrap.css">
+
+  <title>Cadastro de Produto</title>
+
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Informações do produto:</h1>
+    <small>Preencha o formulário</small>
+  </div>
+
+  <div>
+
+    <form action="formulario.html" method="post">
+
+      <div class="form-group">
+        <label for="nome">Nome:</label><br>
+        <input class="form-control"type="text" id="nome" name="nome" placeholder = "Digite o nome">
+      </div>
+
+      <div class="form-group">
+        <label for="peso">Peso:</label><br>
+        <input  class="form-control"type="number" id="peso" name="peso" placeholder = "Digite o peso">
+        <select class="form-control form-control-sm"id="slc1" name="unidade_medida" class="escolha">
+          <option value="00">Escolha a unidade</option>
+          <option value="01">Ton</option>
+          <option value="01">Kg</option>
+          <option value="02">g</option>
+          <option value="03">mg</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label for="estoque">Estoque inicial:</label><br>
+        <input class="form-control"type="number" id="estoque" name="estoque">
+      </div>
+
+
+      <label>Mercado:</label><br>
+      <div class="form-check">
+        <input class="form-check-input"type="radio" id="interno" name="mercado" value="I">
+        <label class="form-check-label" for="interno">Interno</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input"type="radio" id="externo" name="mercado" value="E">
+        <label class="form-check-label"for="externo">Externo</label>
+      </div>
+
+      <div class="form-group">
+        <label for="fornecedor">Fornecedor:</label><br>
+        <select class="form-control"name="fornecedor" class="escolha">
+          <option value="00">Escolha um fornecedor</option>
+          <option value="01">Empresa 1</option>
+          <option value="02">Empresa 2</option>
+          <option value="03">Empresa 3</option>
+          <option value="04">Empresa 4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="valor">Valor de compra:</label><br>
+        <input class="form-control" type="number" id="valor" nome="valor" placeholder="Digite o valor da unidade(R$)">
+      </div>
+
+      <input class="btn btn-outline-success" type="submit" name="salvar" id="salvar" value="Salvar">
+      <input class="btn btn-ligth" type="reset" name="Limpar" value="Limpar">
+    </form>
+  </div>
+
+
+
+  <br><a class="btn btn-secondary btn-sm" href="bs_principal.html" class="exit">Voltar</a>
+</body>
+</html>
