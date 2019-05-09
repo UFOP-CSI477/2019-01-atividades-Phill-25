@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="E:/Documentos/Faculdade/7° Semestre/Sistemas WEB I/Atividade/2019-01-atividades-Phill-25/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1>Vendas</h1>
+    <small>Preencha o formulário e confirme para finalizar a compra</small>
+  </div>
+  <div class="">
+    <form action="index.html" method="post">
+      <div class="form-group">
+        <label id="lproduto" for="produtos">Selecione o produto:</label><br>
+        <select class="form-control" id = "produtos" name="">
+          <option value="00">Selecione um produto</option>
+          <option value="01">Arroz</option>
+          <option value="02">Feijão</option>
+          <option value="03">Farinha</option>
+          <option value="04">Milho</option>
+          <option value="05">Soja</option>
+        </select>
+
+        <div id="alertaV1" class="alert alert-danger" style="display: none">
+          <span>Selecione um produto!</span>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label id="lquantidade" for="quantidade">Informe a quantidade do produto:</label><br>
+        <input class="form-control"type="number" id="quantidade" name="quantidade" value="">
+
+        <div id="alertaV2" class="alert alert-danger" style="display: none">
+          <span>Preencha o campo adequadamente!</span>
+        </div>
+
+      </div>
+
+
+      <label id="lpagamento" for="pagamento">Forma de pagamento:</label><br>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id= "dinheiro" name="pagamento" value="D">
+        <label  class="form-check-label" for="r1">Dinheiro</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id= "cartao"  name="pagamento" value="C">
+        <label class="form-check-label"for="r2">Cartão</label>
+      </div>
+
+
+      <label id="lenvio" class="form-control-label"for="transporte">Escolha o modo de envio:</label><br>
+      <div class="form-check">
+        <input class="form-check-input" id="expresso" type="radio" name="transporte" value="E">
+        <label class="form-check-label"for="r3">Expresso</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input " id="normal" type="radio" name="transporte" value="N">
+        <label class="form-check-label"for="r4">Normal</label>
+      </div>
+
+
+      <button class="btn btn-outline-success" type="button" name="button" onclick="ValidadaAllVendas()">Confirmar</button>
+      <input class="btn betn-outline-ligth"type="reset" name="" value="Limpar">
+    </form>
+  </div>
+
+  <br><a class="btn btn-secondary btn-sm"href="js_principal.html" class="exit">Voltar</a>
+
+  <script src="formulario.js"></script>
+</body>
+</html>
