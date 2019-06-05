@@ -1,0 +1,113 @@
+<html lang="br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Sismógrafo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Sismógrafo</h1>
+      <p class="lead">Bem-vido(a), insira os dados para calcular a intensidade na escala Richter!</p>
+    </div>
+  </div>
+
+<div class="container">
+
+<div id="for" style="display: block">
+  <form class="form-group" >
+    <div id="block1" class="row ">
+    <div class="col">
+      <label id="Lamplitude" for="nome">Amplitude</label>
+
+      <div class="input-group mb-3">
+        <input class="form-control"type="number" name="amplitude" id="amplitude" value="" placeholder="Digite a amplitude">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">(mm)</span>
+        </div>
+      </div>
+      <div id="msg1" style="display: none" class="alert alert-danger" >
+        <span>Preencha o campo!<span>
+      </div>
+    </div>
+
+    <div class="col">
+      <label id="Ltempo" for="tempo">Intervalo de tempo:</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Digite o intervalo" name="tempo" id="tempo">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">(s)</span>
+        </div>
+      </div>
+      <div id="msg2" style="display: none" class="alert alert-danger" >
+        <span>Preencha o campo!<span>
+      </div>
+    </div>
+    </div>
+
+  </form>
+  <div class="row">
+    <div class="col">
+      <button id="calcular" type="button" class="btn btn-outline-info btn-block">Calcular!</button>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div id="alerta1"class="alert alert-info  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Fique atento</strong>, pequeno tremor!</h4>
+          <p>Sua intensidade foi de:</p>
+          <p id="rch1"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div id="alerta2"class="alert alert-warning  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Antenção</strong>, tremor de média intencidade!</h4>
+          <p>Sua intensidade foi de:</p>
+          <p id="rch2"></p>
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div id="alerta3"class="alert alert-danger  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Cuidado</strong>,tremor de alta intensidade!</h4>
+          <p>Sua intencidade foi de:</p>
+          <p id="rch3"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div id="alerta4"class="alert alert-danger  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Cuidado</strong>,tremor altamente destrutivo!</h4>
+          <p>Sua intencidade foi de:</p>
+          <p id="rch4"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+</div>
+
+
+
+
+  <script src="jquery-3.3.1.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+    <script src="03-operacoes.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,110 @@
+<html lang="br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>IMC</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">IMC</h1>
+      <p class="lead">Bem-vido(a) insira os dados e olhe a sua faixa!</p>
+    </div>
+  </div>
+
+<div class="container">
+
+<div id="for" style="display: block">
+  <form class="form-group" >
+    <div id="block1" class="row ">
+    <div class="col">
+      <label id="Laltura" for="nome">Altura</label>
+
+      <div class="input-group mb-3">
+        <input class="form-control"type="number" name="altura" id="altura" value="" placeholder="Digite a sua altura">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">(m)</span>
+        </div>
+      </div>
+      <div id="msg1" style="display: none" class="alert alert-danger" >
+        <span>Preencha o campo!<span>
+      </div>
+    </div>
+
+    <div class="col">
+      <label id="Lpeso" for="tempo">Peso:</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Digite o seu peso" name="peso" id="peso">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">(Kg)</span>
+        </div>
+      </div>
+      <div id="msg2" style="display: none" class="alert alert-danger" >
+        <span>Preencha o campo!<span>
+      </div>
+    </div>
+    </div>
+
+  </form>
+  <div class="row">
+    <div class="col">
+      <button id="calcular" type="button" class="btn btn-outline-info btn-block">Calcular!</button>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div id="alerta1"class="alert alert-success  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Parabéns</strong>, você está na faixa ideal!</h4>
+          <p>Seu IMC é:</p>
+          <p id="imc1"></p>
+          <hr>
+          <p class="mb-0">Sua faixa de peso ideal é:</p>
+          <p id="faixapeso0"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="alerta2"class="alert alert-danger  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Cuidado</strong>, você não esta na sua faixa ideal!</h4>
+          <p>Seu IMC é:</p>
+          <p id="imc2"></p>
+
+          <hr>
+          <p class="mb-0">Sua faixa de peso ideal é:</p>
+          <p id="faixapeso1"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="alerta3"class="alert alert-warning  alert-dismissible fade show" role="alert" style="display: none">
+        <h4 class="alert-heading"><strong>Atenção</strong>, voce não está na sua faixa ideal!</h4>
+          <p>Seu IMC é:</p>
+          <p id="imc3"></p>
+          <hr>
+          <p class="mb-0">Sua faixa de peso ideal é:</p>
+          <p id="faixapeso2"></p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+
+
+
+  <script src="jquery-3.3.1.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+    <script src="02-operacoes.js"></script>
+  </body>
+  </html>
